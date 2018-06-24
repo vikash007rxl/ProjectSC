@@ -7,7 +7,7 @@ object Test {
 
   //functional approach:-
   def scalaExample{
-    println("Hello Scala")
+    println("Hello Scala world")
   }
 }
 
