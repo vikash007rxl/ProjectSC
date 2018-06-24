@@ -21,5 +21,9 @@ object Test {
   def scalaExample2{
     println("Hello Scala world merge")
   }
+
+  def scalaExample4{
+    println("Hello Scala world merge")
+  }
 }
 
