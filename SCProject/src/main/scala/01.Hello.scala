@@ -3,16 +3,17 @@ object Test {
   def main(args:Array[String]){
     println("Hello");
     scalaExample
-    scalaExample1;scalaExample2
+    scalaExample3;scalaExample2
   }
 
   //functional approach:-
   def scalaExample{
+    println("Hello Scala world")
     println("Hello Scala ")
   }
 
   //functional approach:-
-  def scalaExample1{
+  def scalaExample3{
     println("Hello Scala world")
   }
 
