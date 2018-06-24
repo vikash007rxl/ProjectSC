@@ -10,6 +10,7 @@ object Test {
   def scalaExample{
     println("Hello Scala world")
     println("Hello Scala ")
+    println("Hello Scala new line")
   }
 
   //functional approach:-
