@@ -3,8 +3,11 @@
 //Array is a collection of mutable values.
 
 class ArrayExample{  
-    var arr = Array(1,2,3,4,5)      // Creating single dimensional array  
-    def show(){  
+    var arr = Array(1,2,3,4,5)      // Creating single dimensional array  size=5
+    //var arr = new Array(1,2,3,4,5)   //not ok
+    var arr1 = new Array(2)     // ok size 1
+    var arr2 = new Array[Int](2) //ok
+  def show(){
         for(a<-arr)                       // Traversing array elements  
             println(a)  
         println("Third Element  = "+ arr(2))        // Accessing elements by using index  
@@ -149,3 +152,6 @@ object Demo8 {
       }
    }
 }
+
+//Default import:-immmutable collection only
+//explicit import:-mutable collection  Ex:- arrayBuffer, HashSet

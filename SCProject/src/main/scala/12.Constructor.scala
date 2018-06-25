@@ -106,3 +106,13 @@ object Con1{
   }
 }
 
+class WE()
+{
+
+}
+class WE1
+{
+
+}
+
+//class WE and WE1 both are same both have primary constructor

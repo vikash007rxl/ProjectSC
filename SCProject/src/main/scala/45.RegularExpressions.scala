@@ -4,9 +4,14 @@ import scala.util.matching.Regex
 
 object RegularExpressions {
    def main(args: Array[String]) {
-      val pattern = "Scala".r // val pattern = "Scala".r()
+      val pattern = "Scala".r
+      // val pattern = "Scala".r()
+      // val pattern = new Regex("(S|s)cala")
       val str = "Scala is Scalable and cool"
       println(pattern findFirstIn str)
+      println(str.matches(pattern.toString()))
+      println("scala".matches(pattern.toString()))
+      println("Scala".matches(pattern.toString()))
    }
 }
 
@@ -41,7 +46,7 @@ import scala.util.matching.Regex
 object RegularExpressions3 {
    def main(args: Array[String]) {
       val pattern = new Regex("abl[ae]\\d+")
-      val str = "ablaw is able1 and cool"
+      val str = "ablaw is able1 and cool able4"
       
       println((pattern findAllIn str).mkString(","))
    }

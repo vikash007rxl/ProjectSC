@@ -141,5 +141,27 @@ object HigherOrderFunctionsObject7 {
     var sum = add(1, 2, 3, 4, 5, 6, 7, 8, 9);
     println(sum);
   }
-}  
+}
 
+object HigherOrderFunctions {
+  def get(x:Int):Int = x
+  def squire(x:Int):Int = x*x
+  def main(args: Array[String]): Unit = {
+    (1 to 5).map(println)
+    println("===")
+    (1 to 5).map(get).foreach(println)
+    println("===")
+    (1 to 5).map(squire).foreach(println)
+    println("===")
+    (1 to 5).map(_*2).foreach(println)
+    println("===&&&")
+    (1 to 5).map("*"*_).foreach(println)
+
+    var str="welcome guys welcome to scala world"
+    str.split(" ").sortWith(_.length>_.length).foreach(println)
+    println(")))))))))))))))))))))))")
+    str.split(" ").sortWith(_.length<_.length).foreach(println)
+    println(")))))))))))))))))))))))")
+    str.split(" ").sortWith(_>_).foreach(println)
+  }
+}

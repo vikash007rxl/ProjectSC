@@ -73,6 +73,7 @@ def main(args: Array[String]): Unit = {
 //You can create function with or without = (equal) operator. If you use it, function will return value. 
 //If you don't use it, your function will not return anything and will work like subroutine.
 
+//functionns in scala are objects
 //Scala functions don?t use return statement. Return type infers by compiler from the last expression or statement present in the function.
 
 //In Scala function, you can specify the names of parameters during calling the function. You can pass named parameters in any order and can also pass values only.
@@ -149,3 +150,7 @@ object ImplObject{
 
   }
 }
+
+//we must specify return type in reccusrive call
+//javac hello.java ===complie
+//javap hello  ===to see profile of scala file

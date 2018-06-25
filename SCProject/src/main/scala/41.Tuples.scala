@@ -8,13 +8,15 @@ object Tuples {
         var tuple = (1,5,8,6,4)                     // Tuple of integer values  
         var tuple2 = ("Apple","Banana","Gavava")        // Tuple of string values  
         var tuple3 = (2.5,8.4,10.50)                // Tuple of float values  
-        var tuple4 = (1,2.5,"India")                // Tuple of mix type values  
-        println(tuple)  
+        var tuple4 = (1,2.5,"India")                // Tuple of mix type values
+        var tuple5 = new Tuple3(1,2.5,"India")      // new operator is optional
+        println(tuple)
         println(tuple2)  
         println(tuple3)  
-        println(tuple4)  
-        tuple.productIterator.foreach((aa:Any) => println(aa+" "))
-        //OR
+        println(tuple4)
+        println(tuple5)
+     tuple.productIterator.foreach((aa:Any) => println(aa+" ")) //tuple is not collection type hence foreach will not work
+        //OR                                                    //hence use product itereter
          tuple.productIterator.foreach(println)
          println(tuple._1) // Fetching first value  
         println(tuple._2) // Fetching second value 
